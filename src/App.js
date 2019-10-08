@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy } from "react";
+
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+const LoginScreen = lazy(() => import("./containers/Login/Login"))
+const SignupScreen = lazy(() => import("./containers/Signup/Signup"))
+const HomeScreen = lazy(() => import("./containers/Home"))
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Suspense fallback={<div></div>}>
+        <Switch>
+          <Route exact path="/login" component={LoginScreen} />
+          <Route exact path="/signup" component={SignupScreen} />
+          <Route exact path="/home" component={HomeScreen} />
+        </Switch>
+      </Suspense>
+    </BrowserRouter>
   );
 }
 

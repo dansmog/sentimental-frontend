@@ -1,0 +1,20 @@
+.dropdown {
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 1px 4px 5px rgba(202, 225, 254, 0.25);
+  padding: 15px 20px;
+}
+.list-item {
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  display: none;
+  z-index: 9999;
+  position: absolute;
+  width: calc(100% - 30px);
+}
+
+.is-visible {
+  display: flex;
+}

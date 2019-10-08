@@ -1,0 +1,10 @@
+.wrapper{
+  background-color: #EDF5FF;
+  width:100%;
+  height:100vh;
+}
+
+.mainContentWrapper{
+  border-radius: 5px;
+  padding:50px;
+}

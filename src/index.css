@@ -1,13 +1,77 @@
+*{margin:0;padding:0;}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  padding: 0;
+  font-family: "Circular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular"), url(./fonts/CircularStd-Book.woff) format("woff");
 }
+@font-face {
+  font-family: "Circular-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular"), url(./fonts/CircularStd-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: "Circular-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular"), url(./fonts/CircularStd-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Circular-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circular"), url(./fonts/CircularStd-Black.woff) format("woff");
+}
+
+
+/** override styles for bootstrap **/
+.form-group{
+  margin-bottom:0;
+}
+label{
+  margin-bottom:.2rem;
+  color: #0e1543;
+  font-size:14px;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+a,
+ul,
+form,
+button,
+label,
+textarea {
+  font-family: "Circular", sans-serif;
+}
+
+p {
+  font-family: "Circular", sans-serif;
+}
+
+p,h1,h2,h3,h4,h5,h6,a,span,li,ul{
+  margin:0;padding:0;
+}
+
+
+
+
+/** margin and padding **/

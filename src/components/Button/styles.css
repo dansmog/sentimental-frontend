@@ -1,0 +1,20 @@
+button {
+  background-color: rgb(88, 68, 237);
+  font-size: 16px;
+  width: 100%;
+  outline: 0px;
+  border-radius: 3px;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-image: initial;
+  padding: 1em 1.5em;
+  margin: 0.5em 0px;
+  color:#fff;
+  box-shadow: 2px 2px 2px 1px rgb(88, 68, 237, 0.2);
+}
+
+button:focus{
+  outline:none;
+}
